@@ -43,6 +43,8 @@
 
   // wire up image sources (inlined as data URIs via assets/img-*.js)
   stageImg.src = IMAGES.street;
+  var heroImg = document.getElementById("heroImg");
+  if (heroImg) heroImg.src = IMAGES.street;
   document.querySelectorAll(".thumb").forEach(function (btn) {
     var img = btn.querySelector("img");
     if (img && IMAGES[btn.dataset.img]) img.src = IMAGES[btn.dataset.img];
