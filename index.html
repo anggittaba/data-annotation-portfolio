@@ -27,14 +27,24 @@
 
   <!-- HERO -->
   <section class="hero">
-    <p class="eyebrow">Hieronimus Anggit Taba &mdash; Data annotation specialist</p>
-    <h1>Training data your model can actually trust.</h1>
-    <p class="lede">I label images and text for AI teams &mdash; bounding boxes, classification, clean datasets. My QA instinct was forged in production: 3+ years running IT operations across 600+ retail stores, leading a 24-person team where bad data has real consequences.</p>
-    <div class="hero-cta">
-      <a class="btn" href="#studio">Try the annotation studio</a>
-      <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Upwork profile</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">HIERONIMUS ANGGIT TABA &mdash; DATA ANNOTATION SPECIALIST</p>
+        <h1>Training data your model can actually trust.</h1>
+        <p class="lede">I label images and text for AI teams &mdash; bounding boxes, classification, clean datasets. My QA instinct was forged in production: 3+ years running IT operations across 600+ retail stores, leading a 24-person team where bad data has real consequences.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#studio">Try the annotation studio</a>
+          <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Upwork profile</a>
+        </div>
+        <p class="hero-note">The studio below is live. Draw boxes on the sample images yourself &mdash; no sign-up, nothing to install.</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img id="heroImg" src="" alt="">
+        <span class="deco-box" style="left:12%; top:58%; width:32%; height:20%;"><span class="tag">car</span></span>
+        <span class="deco-box" style="left:56%; top:38%; width:20%; height:28%;"><span class="tag">person</span></span>
+        <span class="deco-box" style="left:18%; top:22%; width:26%; height:16%;"><span class="tag">car</span></span>
+      </div>
     </div>
-    <p class="hero-note">The studio below is live. Draw boxes on the sample images yourself &mdash; no sign-up, nothing to install.</p>
   </section>
 
   <!-- STUDIO -->
@@ -45,6 +55,7 @@
       <p class="section-sub">Drag on the image to draw a box. Type a label, or pick a quick one. Export the result as JSON &mdash; the same format your training pipeline eats.</p>
     </div>
 
+    <div class="studio-card">
     <div class="studio">
       <div class="stage-wrap">
         <div class="stage" id="stage">
@@ -86,6 +97,7 @@
         </div>
         <pre class="jsonout" id="jsonOut" hidden></pre>
       </aside>
+    </div>
     </div>
   </section>
 
@@ -203,12 +215,14 @@
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <p class="kicker">06 &mdash; Contact</p>
-    <h2>Have a dataset that needs labeling?</h2>
-    <p class="lede">Send your guidelines and a sample. I&rsquo;ll label a pilot batch so you can judge the quality before committing to anything.</p>
-    <div class="hero-cta">
-      <a class="btn" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Hire me on Upwork</a>
-      <a class="btn btn-ghost" href="mailto:anggittaba8@gmail.com">anggittaba8@gmail.com</a>
+    <div class="contact-card">
+      <p class="kicker">06 &mdash; Contact</p>
+      <h2>Have a dataset that needs labeling?</h2>
+      <p class="lede">Send your guidelines and a sample. I&rsquo;ll label a pilot batch so you can judge the quality before committing to anything.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Hire me on Upwork</a>
+        <a class="btn btn-ghost" href="mailto:anggittaba8@gmail.com">anggittaba8@gmail.com</a>
+      </div>
     </div>
   </section>
 
