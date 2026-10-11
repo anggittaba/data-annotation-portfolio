@@ -3,9 +3,9 @@
   "use strict";
 
   var IMAGES = {
-    street: "assets/street.webp",
-    shelf: "assets/shelf.webp",
-    fruit: "assets/fruit.webp"
+    street: (window.DEMO_IMAGES && window.DEMO_IMAGES.street) || "",
+    shelf: (window.DEMO_IMAGES && window.DEMO_IMAGES.shelf) || "",
+    fruit: (window.DEMO_IMAGES && window.DEMO_IMAGES.fruit) || ""
   };
 
   var SAMPLES = {
@@ -40,6 +40,13 @@
   var boxList = document.getElementById("boxList");
   var boxCount = document.getElementById("boxCount");
   var jsonOut = document.getElementById("jsonOut");
+
+  // wire up image sources (inlined as data URIs via assets/img-*.js)
+  stageImg.src = IMAGES.street;
+  document.querySelectorAll(".thumb").forEach(function (btn) {
+    var img = btn.querySelector("img");
+    if (img && IMAGES[btn.dataset.img]) img.src = IMAGES[btn.dataset.img];
+  });
 
   function boxes() { return state.boxes[state.image]; }
 
