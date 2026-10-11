@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anggit Taba — Data Annotation Specialist</title>
+<meta name="description" content="Training data your model can trust. Image annotation, text labeling and clean datasets by Hieronimus Anggit Taba.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">A<span class="wordmark-dot">.</span>Taba</a>
+  <nav class="topnav">
+    <a href="#studio">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+  </nav>
+  <a class="btn btn-small" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Hire on Upwork</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">Hieronimus Anggit Taba &mdash; Data annotation specialist</p>
+    <h1>Training data your model can actually trust.</h1>
+    <p class="lede">I label images and text for AI teams &mdash; bounding boxes, classification, clean datasets &mdash; delivered with a QA mindset honed over 3+ years in IT operations.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#studio">Try the annotation studio</a>
+      <a class="btn btn-ghost" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Upwork profile</a>
+    </div>
+    <p class="hero-note">The studio below is live. Draw boxes on the sample images yourself &mdash; no sign-up, nothing to install.</p>
+  </section>
+
+  <!-- STUDIO -->
+  <section id="studio" class="studio-section">
+    <div class="section-head">
+      <p class="kicker">01 &mdash; Live demo</p>
+      <h2>Annotation studio</h2>
+      <p class="section-sub">Drag on the image to draw a box. Type a label, or pick a quick one. Export the result as JSON &mdash; the same format your training pipeline eats.</p>
+    </div>
+
+    <div class="studio">
+      <div class="stage-wrap">
+        <div class="stage" id="stage">
+          <img id="stageImg" src="assets/street.webp" alt="Sample image for annotation demo" draggable="false">
+          <div class="overlay" id="overlay"></div>
+        </div>
+        <div class="stage-bar">
+          <div class="thumbs" role="tablist" aria-label="Sample images">
+            <button class="thumb is-active" data-img="street" role="tab" aria-selected="true"><img src="assets/street.webp" alt="Street scene sample"><span>Street</span></button>
+            <button class="thumb" data-img="shelf" role="tab" aria-selected="false"><img src="assets/shelf.webp" alt="Supermarket shelf sample"><span>Shelf</span></button>
+            <button class="thumb" data-img="fruit" role="tab" aria-selected="false"><img src="assets/fruit.webp" alt="Fruit table sample"><span>Fruit</span></button>
+          </div>
+          <p class="box-count"><span id="boxCount">0</span> boxes</p>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="field">
+          <label for="labelInput">Label for the next box</label>
+          <input id="labelInput" type="text" value="car" maxlength="32" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="chips" id="chips">
+          <button class="chip">car</button>
+          <button class="chip">person</button>
+          <button class="chip">box</button>
+          <button class="chip">bottle</button>
+          <button class="chip">apple</button>
+        </div>
+        <div class="boxlist-head">
+          <h3>Boxes</h3>
+          <button class="linklike" id="clearBtn">Clear all</button>
+        </div>
+        <ul class="boxlist" id="boxList">
+          <li class="empty">No boxes yet. Draw one on the image, or load a sample below.</li>
+        </ul>
+        <div class="panel-actions">
+          <button class="btn btn-small" id="sampleBtn">Load sample</button>
+          <button class="btn btn-small btn-ghost" id="exportBtn">Export JSON</button>
+        </div>
+        <pre class="jsonout" id="jsonOut" hidden></pre>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <span>bounding box</span><i>&middot;</i><span>object labeling</span><i>&middot;</i><span>image classification</span><i>&middot;</i><span>text categorization</span><i>&middot;</i><span>sentiment annotation</span><i>&middot;</i><span>data entry</span><i>&middot;</i><span>dataset QA</span><i>&middot;</i>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="section-head">
+      <p class="kicker">02 &mdash; Services</p>
+      <h2>What I take off your plate</h2>
+    </div>
+    <ol class="service-list">
+      <li>
+        <span class="num">01</span>
+        <div>
+          <h3>Image annotation</h3>
+          <p>Bounding boxes, object labeling, and image classification for detection and recognition datasets. Tight boxes, consistent labels, edge cases flagged &mdash; not guessed.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div>
+          <h3>Text &amp; content labeling</h3>
+          <p>Categorization, sentiment annotation, and content tagging that follows your guidelines to the letter &mdash; including the awkward cases most annotators skip.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div>
+          <h3>Data entry &amp; web research</h3>
+          <p>Structured spreadsheets, cleaned and consistent. Excel and Google Sheets, delivered in the format your pipeline expects.</p>
+        </div>
+      </li>
+      <li>
+        <span class="num">04</span>
+        <div>
+          <h3>QA &amp; dataset audit</h3>
+          <p>A second pair of eyes on your existing labels: missed boxes, wrong classes, inconsistent conventions &mdash; reported with examples, fixed on request.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="section-head">
+      <p class="kicker">03 &mdash; How I work</p>
+      <h2>A batch, from intake to delivery</h2>
+    </div>
+    <ol class="steps">
+      <li>
+        <span class="step-no">1</span>
+        <h3>Guidelines first</h3>
+        <p>I read your spec end to end and ask about the edge cases before touching a single image.</p>
+      </li>
+      <li>
+        <span class="step-no">2</span>
+        <h3>Pilot batch</h3>
+        <p>A small sample labeled your way. You confirm the pattern &mdash; then I scale it.</p>
+      </li>
+      <li>
+        <span class="step-no">3</span>
+        <h3>Full run</h3>
+        <p>Consistent labeling at pace, with a short daily note on progress and anything odd I found.</p>
+      </li>
+      <li>
+        <span class="step-no">4</span>
+        <h3>Self-QA &amp; delivery</h3>
+        <p>Every batch re-checked. Uncertainties listed, not hidden. Exported as JSON or CSV &mdash; your format.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- RECEIPT -->
+  <section class="receipt-section">
+    <div class="section-head">
+      <p class="kicker">04 &mdash; Track record</p>
+      <h2>The receipt, not the pitch</h2>
+    </div>
+    <div class="receipt">
+      <div class="receipt-row"><span>Freelance data annotation &mdash; Remotasks</span><span class="mono">1.5 yrs &middot; 2022&ndash;2023</span></div>
+      <div class="receipt-row"><span>IT operations &mdash; Indomaret Group</span><span class="mono">3+ yrs</span></div>
+      <div class="receipt-row"><span>Retail stores supported</span><span class="mono">600+</span></div>
+      <div class="receipt-row"><span>EDP team led</span><span class="mono">24 people</span></div>
+      <div class="receipt-row"><span>Informatics, Sanata Dharma University</span><span class="mono">BTech &middot; 2018&ndash;2022</span></div>
+      <div class="receipt-row total"><span>Invented metrics on this page</span><span class="mono">0</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-head">
+      <p class="kicker">05 &mdash; About</p>
+      <h2>Who labels your data</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I&rsquo;m Anggit, based in Manokwari, Indonesia. I spent a year and a half labeling training data as a freelancer before moving into IT operations, where I now lead a 24-person EDP team supporting 600+ retail stores.</p>
+        <p>That combination is the whole point: I know what clean labels look like, and I know what broken operational data costs. Your dataset gets both perspectives.</p>
+        <p class="mono small">English: conversational &middot; Indonesian: native &middot; UTC+9 &middot; 30+ hrs/week</p>
+      </div>
+      <ol class="timeline">
+        <li><span class="mono">2026&ndash;</span><div><strong>Jr Manager, EDP</strong> &mdash; Indomaret Group</div></li>
+        <li><span class="mono">2024&ndash;26</span><div><strong>EDP Supervisor</strong> &mdash; Indomaret Group</div></li>
+        <li><span class="mono">2023&ndash;24</span><div><strong>MDP Specialist, IT</strong> &mdash; Indomaret Group</div></li>
+        <li><span class="mono">2022&ndash;23</span><div><strong>Freelance Data Annotator</strong> &mdash; Remotasks</div></li>
+        <li><span class="mono">2022&ndash;23</span><div><strong>Network Engineer</strong> &mdash; West Papua Regional Police</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="kicker">06 &mdash; Contact</p>
+    <h2>Have a dataset that needs labeling?</h2>
+    <p class="lede">Send your guidelines and a sample. I&rsquo;ll label a pilot batch so you can judge the quality before committing to anything.</p>
+    <div class="hero-cta">
+      <a class="btn" href="https://www.upwork.com/freelancers/~01d7c64b5331b8e188" target="_blank" rel="noopener">Hire me on Upwork</a>
+      <a class="btn btn-ghost" href="mailto:anggittaba8@gmail.com">anggittaba8@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Hieronimus Anggit Taba &middot; Manokwari, Indonesia</p>
+  <p class="mono small">Built by hand. No templates, no invented metrics.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
