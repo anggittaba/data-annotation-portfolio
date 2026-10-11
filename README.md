@@ -1,17 +1,34 @@
-# Anggit Taba — Data Annotation Portfolio
+# Data Annotation Portfolio — Anggit Taba
 
-A single-page portfolio for a data annotation specialist, built by hand with
-vanilla HTML/CSS/JS. No frameworks, no build step, no templates.
+**Live:** https://anggittaba.github.io/data-annotation-portfolio/
+
+Interactive portfolio for a data annotation specialist. The centerpiece is a
+working annotation studio: visitors draw bounding boxes on sample images,
+assign labels, and export normalized JSON — the same format ML training
+pipelines consume.
+
+## Why this exists
+
+Most annotation portfolios are screenshots and claims. This one lets a client
+test the actual skill in about 30 seconds, with no sign-up and nothing to
+install.
 
 ## What's inside
 
-- **Annotation studio** — a live, working bounding-box demo. Visitors draw
-  boxes on sample images, label them, and export COCO-style JSON. This is the
-  portfolio piece: it demonstrates the actual skill instead of describing it.
-- **Services, process, track record, about, contact** — honest copy, real
-  numbers only.
+- **Annotation studio (live demo)** — bounding-box drawing, quick labels,
+  sample loader, JSON export
+- **Services** — image annotation, text & content labeling, data entry &
+  web research, QA & dataset audit
+- **Process** — a 4-stage workflow from guidelines to delivery
+- **Track record & about** — verified experience, real numbers only
 
-## Run locally
+## Technical notes
+
+Single-page site with zero dependencies and no build step — it loads fast on
+any connection and works on mobile (320px+). The demo images are inlined as
+data URIs so the studio runs fully from one deploy.
+
+## Preview locally
 
 ```bash
 python3 -m http.server --directory . 8000
@@ -20,12 +37,6 @@ python3 -m http.server --directory . 8000
 
 ## Deploy (GitHub Pages)
 
-1. Push this folder to a GitHub repo (e.g. `data-annotation-portfolio`).
+1. Push this folder to the GitHub repo.
 2. Repo Settings → Pages → Deploy from branch → `main` / root.
 3. Link the `*.github.io/data-annotation-portfolio` URL on the Upwork profile.
-
-## Design notes
-
-Follows the Hallmark anti-slop disciplines: locked design tokens (all colors
-and fonts via CSS variables), no invented metrics, roman-only headings,
-mobile-first responsive (320px+), typography-led with one accent color.
