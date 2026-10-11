@@ -196,6 +196,7 @@ section { padding: clamp(3rem, 7vw, 5.5rem) 0; }
 .receipt-row .mono { white-space: nowrap; }
 .receipt-row.total { font-weight: 600; }
 .receipt-row.total .mono { color: var(--accent); }
+.receipt-note { margin-top: 0.9rem; font-size: 0.9rem; color: var(--muted); }
 
 /* ---------- about ---------- */
 .about-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
